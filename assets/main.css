@@ -1,1 +1,125 @@
+/* Custom CSS to closely match michaellatwersky.com */
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+.container {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header {
+  margin-top: 80px;
+  margin-bottom: 56px;
+  text-align: left;
+  animation: fadeIn 1.4s cubic-bezier(.21,1.17,.67,1.05);
+}
+
+.site-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+}
+
+.site-desc {
+  font-size: 1.15rem;
+  color: #999;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+nav {
+  display: flex;
+  gap: 2.5em;
+  margin: 36px 0 48px 0;
+  padding: 0;
+  font-size: 1.05em;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 14px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #6c63ff;
+  color: #6c63ff;
+}
+
+main {
+  animation: fadeInUp 1.2s cubic-bezier(.21,1.17,.67,1.05);
+}
+
+h1, h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 1.8em 0 0.4em 0;
+}
+
+h1:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 1.2em;
+}
+
+a {
+  color: #6c63ff;
+  text-decoration: underline dotted;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #111;
+  background: #f0f0ff;
+}
+
+ul, ol {
+  margin-left: 1.3em;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 98vw;
+    padding: 0 10px;
+  }
+  header {
+    margin-top: 44px;
+    margin-bottom: 28px;
+  }
+  nav {
+    gap: 1.2em;
+    font-size: 1em;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(48px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
