@@ -79,8 +79,8 @@ body {
 .project-nav {
   position: absolute;
   top: 50%;
-  width: 56px;
-  height: 160px;
+  width: auto;
+  height: auto;
   color: #444;
   text-decoration: none;
   display: flex;
@@ -89,16 +89,17 @@ body {
   transition: color 0.2s, opacity 0.3s;
   font-weight: 600;
   font-size: 1.08rem;
-  background: none;
+  background: whitesmoke;
   opacity: 0.85;
+  padding: 16px;
 }
 .project-nav-left {
-  left: 0;
+  left: 16px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
 }
 .project-nav-right {
-  right: 0;
+  right: 16px;
   transform: translateY(-50%) rotate(90deg);
   transform-origin: right center;
 }
