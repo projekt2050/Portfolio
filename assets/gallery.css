@@ -106,7 +106,6 @@
 .gallery-link {
   display: block;
   width:100%;
-  filter: grayscale(1);
   text-decoration: none;
 }
 .gallery-link img {
