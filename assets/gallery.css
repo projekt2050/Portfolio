@@ -168,6 +168,19 @@
   opacity: 1;
   transform: none;
 }
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+.gallery-link img {
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.gallery-link img:hover,
+.gallery-link img:focus {
+  box-shadow: 0 8px 32px 0 rgba(60,90,130,0.13);
+  outline: 2px solid #b6d3ff;
+}
 
 .sidebar {
   width: 340px;
