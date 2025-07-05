@@ -226,3 +226,28 @@
   .gallery { padding-left: 0; }
   .gallery-image img { max-width: 96vw; }
 }
+.project-footer {
+  width: 100%;
+  padding: 40px 0 24px 0;
+  background: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-content {
+  margin-right: 60px;
+  font-size: 1.05rem;
+  color: #aaa;
+  letter-spacing: 0.01em;
+  text-align: right;
+  opacity: 0.85;
+  user-select: none;
+}
+
+@media (max-width: 700px) {
+  .footer-content {
+    margin-right: 16px;
+    font-size: 0.96rem;
+  }
+}
