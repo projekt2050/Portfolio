@@ -98,7 +98,7 @@
 .gallery-image.in-view img {
 
 }
-.gallery-image.in-view .gallery-link img {
+.gallery-image.in-view.gallery-link img {
   opacity: 1;
   transform: none;
 }
