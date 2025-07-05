@@ -31,8 +31,8 @@ body {
   position: fixed;
   top: 50%;
   z-index: 110;
-  width: 56px;
-  height: 180px;
+  width: auto;
+  height: auto;
   color: #444;
   text-decoration: none;
   display: flex;
@@ -40,20 +40,20 @@ body {
   justify-content: center;
   font-weight: 600;
   font-size: 1.08rem;
-  background: none;
+  background: whitesmoke;
   opacity: 0.85;
   transition: color 0.2s, opacity 0.3s;
   letter-spacing: 0.01em;
-  padding: 0;
+  padding: 16px;
   user-select: none;
 }
 .project-nav-left {
-  left: 0;
+  left: 24px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
 }
 .project-nav-right {
-  right: 0;
+  right: 24px;
   transform: translateY(-50%) rotate(90deg);
   transform-origin: right center;
 }
