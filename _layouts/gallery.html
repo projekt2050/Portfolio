@@ -8,6 +8,28 @@
   <link rel="stylesheet" href="{{ '/assets/gallery.css' | relative_url }}">
 </head>
 <body>
+  <!-- TOP NAVIGATION -->
+  <nav class="topnav" id="topnav">
+    <div class="nav-content">
+      <span class="nav-logo">{{ site.title }}</span>
+      <ul class="nav-links">
+        <li class="nav-active">Projects</li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- WELCOME SECTION -->
+  <section class="welcome-section" id="welcome">
+    <div class="welcome-message">
+      <h1>{{ page.welcome | default: "Welcome to My Portfolio" }}</h1>
+    </div>
+    <div class="down-indicator">
+      <span class="finger">👇</span>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
   <div class="page-wrap">
     <aside class="sidebar" id="sidebar">
       <div class="project-meta" id="project-meta">
