@@ -42,28 +42,73 @@ header {
   line-height: 1.4;
 }
 
-nav {
-  display: flex;
-  gap: 2.5em;
-  margin: 36px 0 48px 0;
-  padding: 0;
-  font-size: 1.05em;
+
+/* --- Navigation --- */
+.topnav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  background: rgba(255,255,255,0.95);
   border-bottom: 1px solid #eee;
-  padding-bottom: 14px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
 }
 
-nav a {
+.topnav.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-40px);
+}
+
+.nav-content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.nav-logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #222;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  font-size: 1.05rem;
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+}
+.nav-links .nav-active {
+  color: #161616;
+  font-weight: bold;
+  border-bottom: 2.5px solid #222;
+}
+.nav-links a {
   text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
   color: #111;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-  transition: border-color 0.2s, color 0.2s;
 }
 
-nav a:hover {
-  border-bottom: 2px solid #6c63ff;
-  color: #6c63ff;
-}
 
 main {
   animation: fadeInUp 1.2s cubic-bezier(.21,1.17,.67,1.05);
