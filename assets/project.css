@@ -40,7 +40,7 @@ body {
   justify-content: center;
   font-weight: 600;
   font-size: 1.08rem;
-  background: whitesmoke;
+  background: none;
   opacity: 0.85;
   transition: color 0.2s, opacity 0.3s;
   letter-spacing: 0.01em;
@@ -48,12 +48,12 @@ body {
   user-select: none;
 }
 .project-nav-left {
-  left: 24px;
+  left: 32px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
 }
 .project-nav-right {
-  right: 24px;
+  right: 32px;
   transform: translateY(-50%) rotate(90deg);
   transform-origin: right center;
 }
@@ -151,10 +151,8 @@ body {
 }
 .project-content img {
   width: 100%;
-  max-width: 840px;
   border-radius: 0;
   margin: 32px 0;
-  box-shadow: 0 10px 32px 0 rgba(80,90,110,0.08);
   background: #fff;
   display: block;
 }
