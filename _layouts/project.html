@@ -19,14 +19,17 @@
     </div>
   </nav>
 
-  <!-- Banner Section -->
-  <section class="project-banner" style="background-image:url('{{ page.featured_image }}')">
-    <a class="project-nav project-nav-left" href="{{ page.prev_project_url | relative_url }}">
-      <span>Last Project</span>
-    </a>
-    <a class="project-nav project-nav-right" href="{{ page.next_project_url | relative_url }}">
-      <span>Next Project</span>
-    </a>
+  <!-- Prev/Next Project Buttons -->
+  <a class="project-nav project-nav-left" href="{{ page.prev_project_url | relative_url }}">
+    <span>Last Project</span>
+  </a>
+  <a class="project-nav project-nav-right" href="{{ page.next_project_url | relative_url }}">
+    <span>Next Project</span>
+  </a>
+
+  <!-- Banner with max width -->
+  <section class="project-banner">
+    <img src="{{ page.featured_image }}" alt="{{ page.title }} banner">
     <div class="banner-gradient"></div>
   </section>
 
@@ -48,16 +51,16 @@
     </div>
   </section>
 
-  <!-- Main Content (sections with images) -->
   <main class="project-content">
     {{ content }}
   </main>
 
-  <!-- Footer -->
   <footer class="project-footer">
     <div class="footer-content">
       <span>Handcrafted with ❤️ by {{ site.author.name | default: site.title }}</span>
     </div>
   </footer>
+
+  <script src="{{ '/assets/project.js' | relative_url }}"></script>
 </body>
 </html>
