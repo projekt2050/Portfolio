@@ -113,12 +113,10 @@
   cursor: pointer;
   filter: grayscale(1);
   transition: filter 0.5s cubic-bezier(.5,0,.2,1);
-  transition: box-shadow 0.2s;
 }
 .gallery-link img:hover,
 .gallery-link img:focus {
   filter: grayscale(0);
-  outline: 2px solid #b6d3ff;
 }
 
 .sidebar {
@@ -170,8 +168,6 @@
   max-height: 76vh;
   object-fit: contain;
   border-radius: 0;
-  box-shadow: 0 12px 36px 0 rgba(80,90,110,0.08);
-  background: #fff;
 }
 @media (max-width: 900px) {
   .sidebar { display: none; }
