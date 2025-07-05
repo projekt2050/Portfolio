@@ -82,7 +82,7 @@ body {
   gap: 20%;
   max-width: 100%;
   margin: 0 auto;
-  padding: 140px;
+  padding: 140px 10rem;
   background: #fff;
 }
 .project-header-meta {
