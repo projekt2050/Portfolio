@@ -79,10 +79,10 @@ body {
 .project-header {
   display: flex;
   flex-direction: row;
-  gap: 60px;
-  max-width: 960px;
+  gap: 20%;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 54px 24px 40px 24px;
+  padding: 140px;
   background: #fff;
 }
 .project-header-meta {
