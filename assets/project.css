@@ -152,7 +152,7 @@ body {
 .project-content img {
   width: 100%;
   max-width: 840px;
-  border-radius: 18px;
+  border-radius: 0;
   margin: 32px 0;
   box-shadow: 0 10px 32px 0 rgba(80,90,110,0.08);
   background: #fff;
