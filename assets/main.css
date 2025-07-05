@@ -143,6 +143,25 @@ ul, ol {
   margin-left: 1.3em;
 }
 
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 40px 40px;
+  background: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-content {
+  margin-right: 80px;
+  font-size: 1 rem;
+  color: #aaa;
+  letter-spacing: 0.01em;
+  text-align: right;
+  opacity: 0.85;
+  user-select: none;
+}
+
 @media (max-width: 700px) {
   .container {
     max-width: 98vw;
