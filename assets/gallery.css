@@ -116,6 +116,25 @@
 }
 
 /* --- Move gallery & sidebar down for nav/welcome --- */
+/* Left column initial state (hidden, off-screen left) */
+.project-meta {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 0.5s cubic-bezier(.57,.21,.69,1.25), transform 0.6s cubic-bezier(.57,.21,.69,1.25);
+}
+
+/* Animate in from left */
+.project-meta.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Animate out to left */
+.project-meta.out {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition-delay: 0s, 0s;
+}
 .page-wrap {
   display: flex;
   min-height: 100vh;
