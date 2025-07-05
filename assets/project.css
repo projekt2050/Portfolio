@@ -29,12 +29,12 @@ body {
   user-select: none;
 }
 .project-nav-left {
-  left: 32px;
+  left: 40px;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
 }
 .project-nav-right {
-  right: 32px;
+  right: 40px;
   transform: translateY(-50%) rotate(90deg);
   transform-origin: right center;
 }
