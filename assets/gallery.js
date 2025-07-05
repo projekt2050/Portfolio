@@ -12,29 +12,50 @@ document.addEventListener('DOMContentLoaded', function () {
     meta.querySelector('.project-info').textContent = section.dataset.info;
     meta.querySelector('.project-desc').textContent = section.dataset.desc;
   }
+
+  let firstProjectInView = false;
+
   const observer = new IntersectionObserver(
     (entries) => {
       let focused = null;
+      let firstVisible = false;
       entries.forEach(entry => {
-        // Fade in
+        // Fade in gallery images
         if (entry.intersectionRatio >= 0.4) {
           entry.target.classList.add('in-view');
         } else {
           entry.target.classList.remove('in-view');
         }
-        // Meta info
+        // Meta info logic
         if (entry.intersectionRatio >= 0.6) {
           focused = entry.target;
         }
+        // Check if first project is in view
+        if (entry.target === sections[0] && entry.intersectionRatio >= 0.6) {
+          firstVisible = true;
+        }
       });
-      if (focused) updateMeta(focused);
+
+      // Animate sidebar meta in/out
+      if (firstVisible) {
+        meta.classList.add('visible');
+        meta.classList.remove('out');
+        firstProjectInView = true;
+      } else if (focused) {
+        meta.classList.add('visible');
+        meta.classList.remove('out');
+        firstProjectInView = false;
+      }
+
+      if (focused) {
+        updateMeta(focused);
+      }
     },
     { threshold: [0, 0.4, 0.6, 1] }
   );
   sections.forEach(section => observer.observe(section));
 
   // --- Hide nav on scroll ---
-  let lastScroll = 0;
   function handleNav() {
     const scrollY = window.scrollY || window.pageYOffset;
     if (scrollY < 20) {
@@ -60,4 +81,23 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   window.addEventListener('scroll', hideDownIndicator);
   hideDownIndicator();
+
+  // --- Animate sidebar out when at top/welcome section ---
+  function handleSidebarMeta() {
+    if (!meta) return;
+    const welcomeRect = welcome ? welcome.getBoundingClientRect() : { bottom: 0 };
+    // If welcome section bottom is visible in viewport (i.e., at top)
+    if (welcomeRect.bottom > 80) {
+      meta.classList.remove('visible');
+      meta.classList.add('out');
+    } else {
+      // Only animate in if first project is in view (handled by observer)
+      if (!meta.classList.contains('visible') && firstProjectInView) {
+        meta.classList.add('visible');
+        meta.classList.remove('out');
+      }
+    }
+  }
+  window.addEventListener('scroll', handleSidebarMeta);
+  handleSidebarMeta();
 });
