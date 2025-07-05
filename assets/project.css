@@ -5,7 +5,7 @@ body {
   color: #161616;
 }
 
-/* Navigation (reuse from homepage for consistency) */
+/* Top Navigation (same as homepage, with hide-on-scroll) */
 .topnav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -16,90 +16,44 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
 }
-.nav-content {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
-}
-.nav-logo {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #222;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 32px;
-  margin: 0;
-  padding: 0;
-}
-.nav-links li {
-  font-size: 1.05rem;
-  color: #444;
-  font-weight: 500;
-  cursor: pointer;
-}
-.nav-links a {
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.2s;
-}
-.nav-links a:hover {
-  color: #111;
-}
-
-/* Banner */
-.project-banner {
-  position: relative;
-  width: 100vw;
-  height: 60vh;
-  min-height: 340px;
-  background-size: cover;
-  background-position: center 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 64px;
-  overflow: hidden;
-}
-.banner-gradient {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 80px;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 100%);
+.topnav.hide {
+  opacity: 0;
   pointer-events: none;
+  transform: translateY(-40px);
 }
 
-/* Rotated Project Navs */
+/* Persistent Prev/Next Project Buttons */
 .project-nav {
-  position: absolute;
+  position: fixed;
   top: 50%;
-  width: auto;
-  height: auto;
+  z-index: 110;
+  width: 56px;
+  height: 180px;
   color: #444;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 0.2s, opacity 0.3s;
   font-weight: 600;
   font-size: 1.08rem;
-  background: whitesmoke;
+  background: none;
   opacity: 0.85;
-  padding: 16px;
+  transition: color 0.2s, opacity 0.3s;
+  letter-spacing: 0.01em;
+  padding: 0;
+  user-select: none;
 }
 .project-nav-left {
-  left: 16px;
+  left: 0;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
 }
 .project-nav-right {
-  right: 16px;
+  right: 0;
   transform: translateY(-50%) rotate(90deg);
   transform-origin: right center;
 }
@@ -109,22 +63,53 @@ body {
   text-decoration: underline;
 }
 
-/* Project Header Section (Meta + Description) */
+/* Banner with max width, centered, and padding for navs */
+.project-banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 64px;
+  min-height: 340px;
+  height: 60vh;
+  box-sizing: border-box;
+}
+
+/* The image is NOT full width, so there's white to the left/right */
+.project-banner img {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 10px 32px 0 rgba(80,90,110,0.11);
+  background: #fff;
+}
+.banner-gradient {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 80px;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 100%);
+  pointer-events: none;
+}
+
+/* Two-column layout below banner */
 .project-header {
   display: flex;
   flex-direction: row;
   gap: 60px;
-  max-width: 1100px;
+  max-width: 960px;
   margin: 0 auto;
   padding: 54px 24px 40px 24px;
   background: #fff;
 }
 .project-header-meta {
-  flex: 0 0 330px;
+  flex: 0 0 260px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
 }
 .project-title {
   font-size: 2.2rem;
@@ -193,17 +178,36 @@ body {
   opacity: 0.85;
   user-select: none;
 }
+@media (max-width: 1000px) {
+  .project-banner img {
+    max-width: 98vw;
+  }
+  .project-header,
+  .project-content {
+    max-width: 99vw;
+    padding: 32px 8vw 20px 8vw;
+  }
+}
 @media (max-width: 700px) {
-  .footer-content {
-    margin-right: 16px;
-    font-size: 0.96rem;
+  .project-banner img {
+    max-width: 100vw;
+    border-radius: 0;
+    height: 40vh;
+    min-height: 160px;
   }
   .project-header {
     flex-direction: column;
     gap: 18px;
-    padding: 36px 10px 20px 10px;
+    padding: 24px 6vw 10px 6vw;
   }
   .project-header-meta {
     flex: 0 0 auto;
+  }
+  .footer-content {
+    margin-right: 16px;
+    font-size: 0.96rem;
+  }
+  .project-nav {
+    display: none;
   }
 }
