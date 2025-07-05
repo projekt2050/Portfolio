@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const sections = document.querySelectorAll('.gallery-image');
+  const sections = document.querySelectorAll('.gallery-link');
   const meta = document.getElementById('project-meta');
   const topnav = document.getElementById('topnav');
   const downInd = document.querySelector('.down-indicator');
