@@ -9,5 +9,5 @@ UX & Product Designer
 
 Designing elegant and intuitive digital experiences.
 
-- [About](/about/)
-- [Projects](/projects/)
+- [About]({{ site.baseurl }}/about/)
+- [Projects]({{ site.baseurl }}/projects/)
