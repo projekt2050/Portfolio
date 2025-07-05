@@ -95,7 +95,7 @@
 /* Fade-in effect for gallery images */
 .gallery-image img {
   opacity: 0;
-  width:100%
+  width:100%;
   transform: translateY(40px);
   transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -105,15 +105,19 @@
 }
 .gallery-link {
   display: block;
+  width:100%;
+  filter: grayscale(1);
   text-decoration: none;
 }
 .gallery-link img {
   cursor: pointer;
+  filter: grayscale(1);
+  transition: filter 0.5s cubic-bezier(.5,0,.2,1);
   transition: box-shadow 0.2s;
 }
 .gallery-link img:hover,
 .gallery-link img:focus {
-  box-shadow: 0 8px 32px 0 rgba(60,90,130,0.13);
+  filter: grayscale(0);
   outline: 2px solid #b6d3ff;
 }
 
