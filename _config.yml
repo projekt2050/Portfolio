@@ -1,0 +1,13 @@
+title: "Your Name"
+description: "UX Portfolio"
+theme: null
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
