@@ -38,16 +38,22 @@
         <p class="project-desc">{{ page.projects[0].desc }}</p>
       </div>
     </aside>
-    <main class="gallery">
-      {% for project in page.projects %}
-      <section class="gallery-image"
-        data-title="{{ project.title }}"
-        data-info="{{ project.info }}"
-        data-desc="{{ project.desc }}">
+<main class="gallery">
+  {% for project in page.projects %}
+  <section class="gallery-image"
+    data-title="{{ project.title }}"
+    data-info="{{ project.info }}"
+    data-desc="{{ project.desc }}">
+    {% if project.url %}
+      <a href="{{ project.url | relative_url }}" class="gallery-link" tabindex="0" aria-label="View {{ project.title }}">
         <img src="{{ project.image }}" alt="{{ project.title }}">
-      </section>
-      {% endfor %}
-    </main>
+      </a>
+    {% else %}
+      <img src="{{ project.image }}" alt="{{ project.title }}">
+    {% endif %}
+  </section>
+  {% endfor %}
+</main>
   </div>
   <script src="{{ '/assets/gallery.js' | relative_url }}"></script>
 </body>
