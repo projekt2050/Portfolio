@@ -9,11 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
     meta.querySelector('.project-desc').textContent = section.dataset.desc;
   }
 
+  // Intersection Observer for meta info and fade-in effect
   const observer = new IntersectionObserver(
     (entries) => {
       let focused = null;
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
+        // Fade in when at least 40% visible
+        if (entry.intersectionRatio >= 0.4) {
+          entry.target.classList.add('in-view');
+        } else {
+          entry.target.classList.remove('in-view');
+        }
+        // Use as focused for meta if at least 60% visible
+        if (entry.intersectionRatio >= 0.6) {
           focused = entry.target;
         }
       });
@@ -22,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     {
-      threshold: 0.6
+      threshold: [0, 0.4, 0.6, 1]
     }
   );
 
