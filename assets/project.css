@@ -141,15 +141,15 @@ body {
 /* Footer */
 .project-footer {
   width: 100%;
-  padding: 40px 0 24px 0;
+  padding: 40px 40px;
   background: none;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
 }
 .footer-content {
-  margin-right: 60px;
-  font-size: 1.05rem;
+  margin-right: 80px;
+  font-size: 1 rem;
   color: #aaa;
   letter-spacing: 0.01em;
   text-align: right;
