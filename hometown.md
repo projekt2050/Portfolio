@@ -1,46 +1,33 @@
-
 ---
-layout: page
+layout: project
 title: "Hometown"
 subtitle: "A personal mapping project"
 date: 2023-10-01
 role: "Designer & Developer"
 tools: "React, Mapbox, Figma"
-featured_image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80"
+featured_image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+description: |
+  Hometown is a personal mapping project that explores how visual storytelling can bring memories and locations to life. This project merges design and technology to create an interactive experience of my favorite places.
+prev_project_url: /project-three/
+next_project_url: /project-one/
 permalink: /hometown/
 ---
 
-![Hometown Project]({{ page.featured_image }})
+## Interactive Map Section
 
-## Overview
+This section shows an interactive map with custom markers.
 
-A paragraph about the Hometown project, what you built, and why.
+![Map Screenshot](https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80)
 
-## My Role
+## Photo Gallery
 
-Explain your contribution.
+A selection of photos from my hometown.
 
-## Tools & Technologies
+![Gallery Image 1](https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=900&q=80)
+![Gallery Image 2](https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80)
 
-React, Mapbox, Figma, etc.
+## Reflections
 
-## Gallery
+This project taught me about the power of place, nostalgia, and the technical challenges of custom mapping.
 
-![Screenshot 1](URL-TO-IMAGE)
-![Screenshot 2](URL-TO-IMAGE)
-
-
-## Process
-
-- Stakeholder interviews & user research
-- Wireframes & rapid prototyping
-- Usability testing & iteration
-
-## Impact
-
-- 40% reduction in onboarding time
-- Increased engagement and satisfaction
-
-*(Content anonymized for demonstration.)*
-
-[← Back to Projects](/projects/)
+---
