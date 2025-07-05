@@ -1,15 +1,34 @@
+
 ---
 layout: page
-title: "Enterprise Dashboard Redesign"
+title: "Hometown"
+subtitle: "A personal mapping project"
+date: 2023-10-01
+role: "Designer & Developer"
+tools: "React, Mapbox, Figma"
+featured_image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=900&q=80"
 permalink: /hometown/
 ---
 
-# Enterprise Dashboard Redesign
+![Hometown Project]({{ page.featured_image }})
 
-**Role:** UX Lead
+## Overview
 
-**Summary:**  
-Redesigned the dashboard for a data-heavy SaaS platform, focusing on usability, onboarding, and actionable insights.
+A paragraph about the Hometown project, what you built, and why.
+
+## My Role
+
+Explain your contribution.
+
+## Tools & Technologies
+
+React, Mapbox, Figma, etc.
+
+## Gallery
+
+![Screenshot 1](URL-TO-IMAGE)
+![Screenshot 2](URL-TO-IMAGE)
+
 
 ## Process
 
