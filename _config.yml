@@ -1,6 +1,7 @@
-title: "Your Name"
-description: "UX Portfolio"
+title: "Tane Ross"
+description: "Product Design Lead - Portfolio"
 theme: null
+baseurl: "/Portfolio"
 markdown: kramdown
 permalink: pretty
 plugins:
@@ -11,3 +12,4 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+
