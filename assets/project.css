@@ -134,7 +134,7 @@ body {
 
 /* Main Content: Sections with Images */
 .project-content {
-  max-width: 900px;
+  max-width: calc(100% - 80px - 80px);
   margin: 0 auto;
   padding: 0 24px 56px 24px;
 }
