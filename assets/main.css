@@ -104,7 +104,7 @@ header {
   color: #2C2C51;
 }
 
-.nav-item:active {
+.nav-item.active {
   color: #2C2C51;
   font-weight: 700;
 }
