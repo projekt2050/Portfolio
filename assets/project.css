@@ -14,7 +14,7 @@ body {
   z-index: 110;
   width: auto;
   height: auto;
-  color: #444;
+  color: #222;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   font-weight: 500;
   font-size: .7rem;
   background: none;
-  opacity: 0.85;
+  opacity: 0.75;
   transition: color 0.2s, opacity 0.3s;
   letter-spacing: 0.01em;
   padding: 16px;
