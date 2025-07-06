@@ -15,7 +15,7 @@ body {
 /* Persistent Prev/Next Project Buttons */
 .project-nav {
   position: fixed;
-  top: 50%;
+  top: 60%;
   z-index: 110;
   width: auto;
   height: auto;
