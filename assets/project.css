@@ -1,8 +1,10 @@
+/* Custom CSS to closely */
+/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51 */
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
   background-image: linear-gradient(to bottom, #ffffff, #f7f6fb, #efeef8, #e6e5f4, #ddddf1);
-  color: #161616;
+  color: #16161B;
 }
 
 
@@ -14,7 +16,7 @@ body {
   z-index: 110;
   width: auto;
   height: auto;
-  color: #222;
+  color: #16161B;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -39,7 +41,7 @@ body {
   transform-origin: right center;
 }
 .project-nav:hover, .project-nav:focus {
-  color: #222;
+  : #2C2C51;
   opacity: 1;
 }
 
@@ -91,18 +93,18 @@ body {
 }
 .project-subtitle {
   font-size: 1.13rem;
-  color: #777;
+  color: #16161B;
   margin-bottom: 0.8em;
 }
 .project-meta {
   font-size: 1.02rem;
-  color: #888;
+  color: #16161B;
   margin-bottom: 0.7em;
 }
 .project-header-desc {
   flex: 1 1 0;
   font-size: 1.18rem;
-  color: #222;
+  color: #16161B;
   line-height: 1.7;
 }
 
@@ -116,11 +118,11 @@ body {
   margin-top: 2.5em;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #242424;
+  color: #16161B;
 }
 .project-content p {
   font-size: 1.12rem;
-  color: #333;
+  color: #16161B;
   line-height: 1.7;
 }
 .project-content img {
