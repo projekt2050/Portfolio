@@ -3,7 +3,8 @@ layout: gallery
 title: "Home"
 welcome: "Hi, I'm Tane. Welcome to my portfolio."
 projects:
-  - title: "Project One"
+  - title: "1.
+    How NFL athletes prepare for the season"
     info: "2024 · UX/UI · Dashboard"
     desc: "Short description for Project One. Replace with your content."
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
