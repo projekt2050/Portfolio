@@ -133,7 +133,7 @@
   cursor: pointer;
   filter: grayscale(1);
   transition: filter 0.5s cubic-bezier(.5,0,.2,1);
-  border-radius: 3rem;
+  border-radius: 2rem;
 }
 
 .gallery-link img:hover,
