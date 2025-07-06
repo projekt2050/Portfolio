@@ -105,6 +105,11 @@ header {
   color: #2C2C51;
 }
 
+.nav-item:active {
+  color: #2C2C51;
+  font-weight: 700;
+}
+
 .nav-item.nav-logo:hover,
 .nav-item.nav-logo:focus {
   background: transparent;
