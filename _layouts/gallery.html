@@ -35,6 +35,7 @@
   <div class="page-wrap">
     <aside class="sidebar" id="sidebar">
       <div class="project-meta" id="project-meta">
+        <h1 class="project-index">{{ page.projects[0].index }}</h1>
         <h1 class="project-title">{{ page.projects[0].title }}</h1>
         <p class="project-info">{{ page.projects[0].info }}</p>
         <p class="project-desc">{{ page.projects[0].desc }}</p>
@@ -43,7 +44,6 @@
 <main class="gallery">
   {% for project in page.projects %}
   <section class="gallery-image"
-    data-index="{{ project.title }}"
     data-title="{{ project.title }}"
     data-info="{{ project.info }}"
     data-desc="{{ project.desc }}">
