@@ -1,11 +1,12 @@
-/* Custom CSS to closely match michaellatwersky.com */
+/* Custom CSS to closely */
+/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51 */
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #fff;
-  color: #111;
+  background-image: linear-gradient(to bottom, #ffffff, #f7f6fb, #efeef8, #e6e5f4, #ddddf1);
+  color: #16161B;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 22px;
   line-height: 1.6;
@@ -80,7 +81,7 @@ header {
   font-size: .7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #222;
+  color: #16161B;
 }
 
 .nav-links {
@@ -93,12 +94,12 @@ header {
 .nav-links li {
   text-transform: uppercase;
   font-size: .7rem;
-  color: #444;
+  color: #2C2C36;
   font-weight: 300;
   cursor: pointer;
 }
 .nav-links .nav-active {
-  color: #161616;
+  color: #2C2C36;
   font-weight: 500;
   border-bottom: 2.5px solid #222;
 }
@@ -110,7 +111,7 @@ header {
 }
 .nav-links a:hover {
   text-decoration: underline;
-  color: #111;
+  color: #2C2C51;
   opacity: 1;
 }
 
@@ -135,13 +136,13 @@ h3 {
 }
 
 a {
-  color: #6c63ff;
+  color: #2C2C36;
   text-decoration: underline dotted;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #111;
+  color: #2C2C51;
 }
 
 ul, ol {
@@ -160,7 +161,7 @@ ul, ol {
 .footer-content {
   margin-right: 80px;
   font-size: .7rem;
-  color: #aaa;
+  color: #2C2C51;
   letter-spacing: 0.01em;
   text-align: right;
   opacity: 0.85;
