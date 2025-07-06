@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to bottom, #ffffff, #f7f6fb, #efeef8, #e6e5f4, #ddddf1);
+  background-repeat: none;
   color: #16161B;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 16px;
