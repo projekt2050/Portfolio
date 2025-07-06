@@ -54,7 +54,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 64px;
+
   min-height: 340px;
   height: 60vh;
   box-sizing: border-box;
