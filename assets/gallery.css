@@ -123,14 +123,13 @@
   width: 340px;
   min-width: 240px;
   max-width: 30vw;
-  border-right: 1px solid #eee;
   position: sticky;
   top: 0;
   height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 48px 32px 32px 40px;
+  padding: 180px 32px 32px 40px;
   box-sizing: border-box;
   z-index: 10;
 }
