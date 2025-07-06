@@ -11,15 +11,23 @@
 </head>
 <body>
   <!-- TOP NAVIGATION -->
-  <nav class="topnav" id="topnav">
-    <div class="nav-content">
-      <span class="nav-logo">{{ site.title }}</span>
-      <ul class="nav-links">
-        <li class="nav-active">Projects</li>
-        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-      </ul>
+ <nav class="topnav" id="topnav">
+  <div class="nav-grid">
+    <div class="nav-item nav-logo">Tane Ross</div>
+    <a class="nav-item" href="{{ '/' | relative_url }}">Projects</a>
+    <a class="nav-item" href="{{ '/about/' | relative_url }}">About</a>
+    <div class="nav-item nav-icons">
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" aria-label="LinkedIn">
+        <!-- LinkedIn SVG icon -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.786-1.75-1.75s.784-1.75 1.75-1.75 1.75.786 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.338-.027-3.064-1.868-3.064-1.868 0-2.154 1.46-2.154 2.968v5.7h-3v-10h2.881v1.367h.041c.401-.76 1.381-1.561 2.844-1.561 3.043 0 3.604 2.004 3.604 4.609v5.585z"/></svg>
+      </a>
+      <a href="mailto:tane.u.ross@gmail.com" target="_blank" aria-label="Email">
+        <!-- Email SVG icon -->
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.5l8-6.5h-16l8 6.5zm8-8.5c1.104 0 2 .896 2 2v12c0 1.104-.896 2-2 2h-16c-1.104 0-2-.896-2-2v-12c0-1.104.896-2 2-2h16zm0 2h-16v.511l8 6.489 8-6.489v-.511zm0 2.674l-8 6.489-8-6.489v9.326h16v-9.326z"/></svg>
+      </a>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- WELCOME SECTION -->
   <section class="welcome-section" id="welcome">
