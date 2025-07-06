@@ -3,7 +3,8 @@ layout: gallery
 title: "Gallery"
 permalink: /gallery/
 projects:
-  - title: "Project One"
+  - title: "1.
+    Project One"
     info: "2024 · UX/UI · Dashboard"
     desc: "Short description for Project One. Replace with your content."
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80"
