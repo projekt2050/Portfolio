@@ -156,19 +156,7 @@
   color: #16161B;
   margin: 0;
 }
-.gallery-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-}
-.gallery-image img {
-  max-width: 70vw;
-  width: 100%;
-  max-height: 76vh;
-  object-fit: contain;
-  border-radius: 0;
-}
+
 @media (max-width: 900px) {
   .sidebar { display: none; }
   .gallery { padding-left: 0; }
