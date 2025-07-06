@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
-  background-image: linear-gradient(to bottom, #ffffff, #f7f6fb, #efeef8, #e6e5f4, #ddddf1);
+  background: #fff;
   color: #16161B;
 }
 
