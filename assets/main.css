@@ -102,7 +102,7 @@ header {
 
 .nav-item:hover,
 .nav-item:focus {
-  background: ##E1E1F3;
+  background: rgba(255,255,255,0.5);
   color: #6A6AD2;
 }
 
@@ -113,8 +113,8 @@ header {
 
 .nav-item.nav-logo:hover,
 .nav-item.nav-logo:focus {
-  background: transparent;
-  color: #6A6AD2;
+  background: rgba(255,255,255,0.5);
+  color: #16161B;
   cursor: default;
 }
 
