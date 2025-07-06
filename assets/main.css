@@ -5,7 +5,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f0f0fe, #e0e0f2, #d1d1e5, #c2c2d9, #b3b3cd);
+  background: linear-gradient(to bottom, #f0f0fe, #f4f4fe, #f8f7fe, #fcfbff, #ffffff);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +52,6 @@ header {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 64px;
-  background: rgba(255,255,255,0.98);
   z-index: 100;
   padding: 0 50px;
   box-sizing: border-box;
@@ -109,8 +108,7 @@ header {
 
 .nav-item.active {
   color: #2C2C51;
-  background: #fff;
-  font-weight: 700;
+  background: rgba(255,255,255,0.7);
 }
 
 .nav-item.nav-logo:hover,
