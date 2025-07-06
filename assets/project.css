@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
   background: #fff;
+  background-size: cover;
   color: #16161B;
 }
 
