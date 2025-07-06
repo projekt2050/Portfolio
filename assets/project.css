@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', Arial, sans-serif;
-  background: #fff;
+  background-image: linear-gradient(to bottom, #ffffff, #f7f6fb, #efeef8, #e6e5f4, #ddddf1);
   color: #161616;
 }
 
@@ -66,13 +66,7 @@ body {
   box-shadow: 0 10px 32px 0 rgba(80,90,110,0.11);
   background: #fff;
 }
-.banner-gradient {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 80px;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 100%);
-  pointer-events: none;
-}
+
 
 /* Two-column layout below banner */
 .project-header {
