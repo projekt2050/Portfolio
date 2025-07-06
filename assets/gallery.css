@@ -9,12 +9,13 @@
   position: relative;
   background: #fff;
   text-align: center;
-  padding-top: 70px; /* for nav offset */
+  padding-top: 100px 70px 100px 0; /* for nav offset */
+  
 }
 
 .welcome-message h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-size: 2rem;
+  font-weight: 600;
   color: #181818;
   margin-bottom: 0;
   margin-top: 0;
