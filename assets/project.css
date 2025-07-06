@@ -17,12 +17,13 @@ body {
   width: auto;
   height: auto;
   color: #16161B;
+  text-transform: uppercase;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: .7rem;
+  font-size: 1rem;
   background: none;
   opacity: 0.75;
   transition: color 0.2s, opacity 0.3s;
@@ -41,7 +42,7 @@ body {
   transform-origin: right center;
 }
 .project-nav:hover, .project-nav:focus {
-  : #2C2C51;
+  color: #2C2C51;
   opacity: 1;
 }
 
@@ -66,7 +67,7 @@ body {
   object-fit: cover;
   border-radius: 0px;
   box-shadow: 0 10px 32px 0 rgba(80,90,110,0.11);
-  background: #fff;
+
 }
 
 
@@ -78,7 +79,6 @@ body {
   max-width: 100%;
   margin: 0 auto;
   padding: 140px 10rem;
-  background: #fff;
 }
 .project-header-meta {
   flex: 0 0 260px;
@@ -93,7 +93,6 @@ body {
 }
 .project-subtitle {
   font-size: 1.13rem;
-  color: #16161B;
   margin-bottom: 0.8em;
 }
 .project-meta {
