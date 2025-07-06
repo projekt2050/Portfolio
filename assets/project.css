@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   background: #fff;
   color: #161616;
 }
@@ -19,8 +19,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
-  font-size: 1.08rem;
+  font-weight: 500;
+  font-size: .7rem;
   background: none;
   opacity: 0.85;
   transition: color 0.2s, opacity 0.3s;
@@ -41,7 +41,6 @@ body {
 .project-nav:hover, .project-nav:focus {
   color: #222;
   opacity: 1;
-  text-decoration: underline;
 }
 
 /* Banner with max width, centered, and padding for navs */
