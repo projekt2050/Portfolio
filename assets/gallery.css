@@ -94,7 +94,8 @@
 
 /* Fade-in effect for gallery images */
 .gallery-image {
-  width:100%;
+  width:75%;
+  align:left;
   padding-left:80px;
 }
 
