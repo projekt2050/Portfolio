@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: "Home"
-welcome: "Welcome to my Portfolio. It was built using GitHub Copilot."
+welcome: "Hi, I'm Tane. Welcome to my portfolio."
 projects:
   - title: "Project One"
     info: "2024 · UX/UI · Dashboard"
