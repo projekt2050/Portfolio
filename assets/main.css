@@ -1,11 +1,11 @@
 /* Custom CSS to closely */
-/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51, purple #6A6AD2 */
+/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51, purple ##E1E1F3 */
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f0f0fe, #f4f4fe, #f8f7fe, #fcfbff, #ffffff);
+  background: linear-gradient(to bottom, #ededf8, #f2f1fa, #f6f6fb, #fbfafd, #ffffff);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -102,12 +102,12 @@ header {
 
 .nav-item:hover,
 .nav-item:focus {
-  background: #ddddff;
-  color: #2C2C51;
+  background: ##E1E1F3;
+  color: #6A6AD2;
 }
 
 .nav-item.active {
-  color: #2C2C51;
+  color: #16161B;
   background: rgba(255,255,255,0.7);
 }
 
