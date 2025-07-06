@@ -128,7 +128,7 @@ body {
 }
 .project-content img {
   width: 100%;
-  border-radius: 0;
+  border-radius: 2rem;
   margin: 32px 0;
   background: #fff;
   display: block;
