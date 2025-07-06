@@ -92,7 +92,7 @@ header {
 }
 .nav-links li {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: .8rem;
   color: #2C2C36;
   font-weight: 300;
   cursor: pointer;
@@ -100,7 +100,7 @@ header {
 .nav-links .nav-active {
   color: #2C2C36;
   font-weight: 500;
-  border-bottom: 2.5px solid #222;
+  border-bottom: 2.5px solid #2C2C36;
 }
 .nav-links a {
   text-decoration: none;
@@ -159,7 +159,7 @@ ul, ol {
 .footer-content {
   margin-right: 80px;
   font-size: .7rem;
-  color: #2C2C51;
+  color: #2C2C36;
   letter-spacing: 0.01em;
   text-align: right;
   opacity: 0.85;
