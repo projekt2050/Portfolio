@@ -59,6 +59,7 @@ body {
   min-height: 340px;
   height: 60vh;
   box-sizing: border-box;
+
 }
 
 /* The image is NOT full width, so there's white to the left/right */
@@ -67,9 +68,7 @@ body {
   width: calc(100% - 80px - 80px);
   height: 100%;
   object-fit: cover;
-  border-radius: 0px;
-  box-shadow: 0 10px 32px 0 rgba(80,90,110,0.11);
-
+  border-radius: 2rem;
 }
 
 
