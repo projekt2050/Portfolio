@@ -1,3 +1,4 @@
+/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51 */
 /* --- Welcome Section --- */
 .welcome-section {
   display: flex;
@@ -13,9 +14,9 @@
 }
 
 .welcome-message h1 {
-  font-size: 2rem;
+  font-size: 2.7rem;
   font-weight: 600;
-  color: #181818;
+  color: #16161B;
   margin-bottom: 0;
   margin-top: 0;
   letter-spacing: -0.01em;
@@ -139,19 +140,20 @@
   max-width: 280px;
 }
 .project-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
   font-weight: 700;
   line-height: 1.1;
   margin: 0 0 0.7em 0;
 }
 .project-info {
-  font-size: 1.1rem;
-  color: #8b8b8b;
+  font-size: 1rem;
+  color: #2C2C36;
   margin: 0 0 1.2em 0;
 }
 .project-desc {
-  font-size: 1.06rem;
-  color: #555;
+  font-size: 1rem;
+  color: #16161B;
   margin: 0;
 }
 .gallery-image {
@@ -171,22 +173,6 @@
   .sidebar { display: none; }
   .gallery { padding-left: 0; }
   .gallery-image img { max-width: 96vw; }
-}
-.project-footer {
-  width: 100%;
-  padding: 40px 0 24px 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer-content {
-  margin-right: 60px;
-  font-size: 1.05rem;
-  letter-spacing: 0.01em;
-  text-align: right;
-  opacity: 0.85;
-  user-select: none;
 }
 
 @media (max-width: 700px) {
