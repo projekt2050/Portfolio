@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // --- Gallery Intersection Observer (fade in + meta update) ---
   function updateMeta(section) {
     if (!section) return;
+    meta.querySelector('.project-index').textContent = section.dataset.index;
     meta.querySelector('.project-title').textContent = section.dataset.title;
     meta.querySelector('.project-info').textContent = section.dataset.info;
     meta.querySelector('.project-desc').textContent = section.dataset.desc;
