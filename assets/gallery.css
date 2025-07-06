@@ -20,7 +20,27 @@
   margin-bottom: 0;
   margin-top: 0;
   letter-spacing: -0.01em;
+  animation: welcomeFadeInUp 1.2s cubic-bezier(.21,1.17,.67,1.05) both;
 }
+
+@keyframes welcomeFadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    letter-spacing: 0.05em;
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-6px) scale(1.02);
+    letter-spacing: 0em;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    letter-spacing: 0em;
+  }
+}
+
 
 /* Downward finger indicator */
 .down-indicator {
