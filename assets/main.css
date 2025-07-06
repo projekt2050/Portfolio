@@ -91,7 +91,7 @@ header {
 
 .nav-item:hover,
 .nav-item:focus {
-  background: #ddddff1;
+  background: #ddddff;
   color: #2C2C51;
 }
 
@@ -107,7 +107,7 @@ header {
   align-items: center;
   justify-content: center;
   margin: 0 0.3em;
-  color: #444;
+  color: #16161B;
   opacity: 0.9;
   transition: color 0.19s;
   font-size: 1.2rem;
