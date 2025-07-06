@@ -55,7 +55,17 @@ header {
   box-sizing: border-box;
   width: 100vw;
   text-transform: uppercase;
-  /* transition, etc, as before */
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.topnav.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-40px);
+}
 }
 
 .nav-grid {
