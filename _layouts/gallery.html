@@ -44,6 +44,7 @@
 <main class="gallery">
   {% for project in page.projects %}
   <section class="gallery-image"
+    data-index="{{ project.index }}"
     data-title="{{ project.title }}"
     data-info="{{ project.info }}"
     data-desc="{{ project.desc }}">
