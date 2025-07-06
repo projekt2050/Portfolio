@@ -1,5 +1,5 @@
 /* Custom CSS to closely */
-/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51 */
+/* colors: bg #ddddff1, text #16161B, secondary #2C2C36, hover #2C2C51, purple #6A6AD2 */
 
 html, body {
   height: 100%;
@@ -109,13 +109,14 @@ header {
 
 .nav-item.active {
   color: #2C2C51;
+  background: #fff;
   font-weight: 700;
 }
 
 .nav-item.nav-logo:hover,
 .nav-item.nav-logo:focus {
   background: transparent;
-  color: #2C2C51;
+  color: #6A6AD2;
   cursor: default;
 }
 
@@ -130,7 +131,7 @@ header {
   font-size: 1.2rem;
 }
 .nav-icons a:hover {
-  color: #2C2C51;
+  color: #6A6AD2;
   opacity: 1;
 }
 
