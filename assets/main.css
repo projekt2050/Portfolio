@@ -84,7 +84,7 @@ header {
   justify-content: center;
   text-align: center;
   height: 100%;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 500;
   color: #16161B;
   text-decoration: none;
@@ -93,7 +93,7 @@ header {
 }
 
 .nav-item.nav-logo {
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 700;
   letter-spacing: 0.04em;
   color: #16161B;
