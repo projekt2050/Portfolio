@@ -20,13 +20,12 @@ body {
   width: auto;
   height: auto;
   color: #16161B;
-  text-transform: uppercase;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .8rem;
   background: none;
   opacity: 0.75;
   transition: color 0.2s, opacity 0.3s;
